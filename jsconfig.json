@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "checkJs": true,
+    "maxNodeModuleJsDepth": 0,
+    "target": "esnext",
+    "module": "esnext", // add this line
+    "moduleResolution": "node",
+    "paths": {
+      "#db": ["./db"]
+    }
+  },
+  "exclude": ["./client"]
+}

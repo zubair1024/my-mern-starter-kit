@@ -1,0 +1,57 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "prettier"
+  ],
+  "plugins": ["import"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "jsconfig.json",
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "ignorePatterns": ["./client/**/*"],
+  "rules": {
+    "no-console": "off",
+    "no-debugger": "error",
+    "no-unused-vars": "off",
+    "no-empty": "warn",
+    "no-global-assign": "warn",
+    "no-implicit-globals": "warn",
+    "no-undef": "error",
+    "no-useless-escape": "off",
+    "no-else-return": "off",
+    "eqeqeq": "warn",
+    "no-prototype-builtins": "warn",
+    "no-case-declarations": "warn",
+    "linebreak-style": ["warn", "unix"],
+    "@typescript-eslint/no-misused-promises": ["error", { "checksVoidReturn": false }],
+    "@typescript-eslint/no-this-alias": "warn",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-return": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/prefer-regexp-exec": "off",
+    "@typescript-eslint/restrict-plus-operands": "off",
+    "@typescript-eslint/restrict-template-expressions": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
+  }
+}
